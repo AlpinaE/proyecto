@@ -42,6 +42,7 @@ namespace proyecto.Controllers
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+            
         }
     }
 }

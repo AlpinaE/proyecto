@@ -32,7 +32,7 @@ spec:
         app: proyecto
     spec:
       containers:
-      - image: <Enlace de la imagen en azure>
+      - image: mascomaceta.azurecr.io/proyecto
         name: proyecto
         ports:
         - containerPort: 80
@@ -43,7 +43,7 @@ spec:
           requests:
             cpu: 100m
       imagePullSecrets:
-        - name: <nombre del secreto en azure>
+        - name: secretproject
 ---      
 apiVersion: autoscaling/v1
 kind: HorizontalPodAutoscaler
