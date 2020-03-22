@@ -12,10 +12,12 @@ namespace proyecto.Controllers
     {
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public ActionResult<IEnumerable<Int32>> Get()
         {
-            return new string[] { "value1", "value2" };
+            Random num= new Random();
+            return new int[] { num.Next(10000,99999) };
         }
+
 
         // GET api/values/5
         [HttpGet("{id}")]
